@@ -1,6 +1,6 @@
 # Martian Robots
 
-## RobotApp (_fun.robot.RobotApp_) 
+## RobotApp (_fun.robot.app.RobotApp_) 
 
 Run the RobotApp and enter the inputs.
 On hitting enter after a blank line the output is printed.

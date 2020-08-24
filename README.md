@@ -5,6 +5,8 @@
 Run the RobotApp and enter the inputs.
 On hitting enter after a blank line the output is printed.
 
+**NOTE**: Do not enter any blank lines in the input as it is treated as end of input
+
 Sample Input:
 ```
 5 3

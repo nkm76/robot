@@ -16,13 +16,13 @@ public class RobotApp {
     private void init() {
         System.out.println("Input the Mars grid, robot position and instructions; Enter blank line and hit enter to finish...");
         Scanner scanner = new Scanner(System.in);
-        List<SimpleRobot> robots = new ArrayList<>();
+        List<Robot> robots = new ArrayList<>();
         if (scanner.hasNextLine()) {
             Coordinates grid = scanGrid(tokens(scanner));
             while (true) {
                 Position position = scanPosition(tokens(scanner));
                 if (position != null) {
-                    SimpleRobot robot = new SimpleRobot(grid, position, r -> !scent.contains(r.position()), r -> scent.add(r.position()));
+                    Robot robot = new SimpleRobot(grid, position, r -> !scent.contains(r.position()), r -> scent.add(r.position()));
                     robots.add(robot);
                     List<Instruction> instructions = scanInstructions(tokens(scanner));
                     if (instructions != null) {
